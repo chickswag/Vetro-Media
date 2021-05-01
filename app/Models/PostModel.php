@@ -14,8 +14,9 @@ class PostModel extends Model
     protected $table = 'posts';
     public $timestamps = true;
 
-    public static function ratingAverage(){
-        return 6;
+    public function getUserName()
+    {
+        return $this->hasOne('App\Models\User', 'id', 'created_by');
     }
 
 }

@@ -8,7 +8,7 @@
             @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Post title" name="post_title" value="{{$post['title']}}" required/>
-                    <textarea class="form-control mt-2 mb-2" required name="post_content" placeholder="Start typing..." >{{$post['content']}}</textarea>
+                    <textarea class="form-control mt-2 mb-2" rows="15" required name="post_content" placeholder="Start typing..." >{{$post['content']}}</textarea>
                     <button type="submit" class="btn btn-info btn-sm">Save</button>
                     <a href="{{ url()->previous() }}" class="btn btn-secondary btn-sm">Cancel</a>
                 </div>

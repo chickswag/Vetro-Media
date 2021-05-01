@@ -16,6 +16,12 @@
                                         <div class="card-text">
                                             {{ $post->content }}
                                         </div>
+                                        <div class="text-black-50 float-right font-italic">
+
+                                            <blockquote>created by <u>{{$post->getUserName->name }}</u><br/>
+                                                {{$post->created_at->format("Y m d ") }}
+                                            </blockquote>
+                                        </div>
 
                                     </div>
                                     <div class="card-footer">
